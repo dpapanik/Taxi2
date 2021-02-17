@@ -12,6 +12,9 @@
   <!-- Mobile Specific Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
+    <!-- Font Awsome -->
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  
   <!-- Load d3.js -->
   <script src="https://d3js.org/d3.v4.js"></script>
 
@@ -58,9 +61,14 @@
   </div>
 
 
-  <div class="container one-bottom" style="margin-top: 50px">
+  <div class="container one-bottom" style="margin-top: 10px">
     <div class="twelve columns">
-      <h3>Narrative</h3>
+        
+         
+     
+      <h2>Chigaco Taxis Trips <i class="fas fa-1x fa-taxi"></i></h2> 
+      
+      <h4>Narrative</h4>
       <p>
         Chicago is a bustling city filled with various means of transportation. Taxis are especially common, however, for a taxi company in a dynamic city, knowing where to distribute their fleet and how to dispatch them is essential to successful business operations. Placing vehicle fleets in less dense areas will likely result in fewer total trips and lost potential revenue. However, saturating an area with too many vehicles might negatively impact overall profitability. Short trips might take less time than long distance trips, yet long trips might yield more money. 
         <br><br>
@@ -79,7 +87,7 @@
 
   <div class="container one-bottom" >
     <div class="twelve columns">
-      <h3>Example 1: Simple Map</h3>
+      <h3>Example 1: Simple Map <i class="fas fa-map-marker-alt"></i> </h3>
       <h5>
         This example shows how to create a map using Leaflet.js and MapBox.js, and center the map at a specified pair of lat/long coordinates.
       </h5>
@@ -91,7 +99,7 @@
 
   <div class="container one-bottom" >
     <div class="twelve columns">
-      <h3>Example 2: Map with displayed locations of stations from a dataset</h3>
+      <h3>Example 2: Map with displayed locations of stations from a dataset <i class="fas fa-map-marker-alt"></i></h3>
       <h5>
         This example shows how to create a map using Leaflet.js/MapBox.js, and then plot a set of circles at the locations of the stations.
       </h5>
@@ -103,7 +111,7 @@
 
   <div class="container one-bottom" >
     <div class="twelve columns">
-      <h3>Example 3: Map with locations of stations with sizes proportional to their accumulation levels</h3>
+      <h3>Example 3: Map with locations of stations with sizes proportional to their accumulation levels <i class="fas fa-map-marker-alt"></i></h3>
       <h5>
         This example shows how to create a map using Leaflet.js/MapBox.js, plot a set of circles at the locations of the stations, and adjusts their diameters to be proportional to the inventory levels of the stations.
       </h5>
@@ -114,7 +122,7 @@
   <div id="map_3" class="one-bottom"></div>
   
   <div class="container one-bottom">
-      <h3>Charts showing the income of each company and compare them </h3>
+      <h3>Charts showing the income of each company and compare them <i class="fas fa-chart-bar"></i> </h3>
   </div>
   <div class="container one-bottom">
       <div class="row">
@@ -151,14 +159,14 @@
 
   <div class="container one-bottom" >
     <h2>Team & Contributions</h2>
-    <h5>Be very clear about how each student in your team contributed to this project</h5>
-    <h3>Student A</h3>
+    <!-- <h5>Be very clear about how each student in your team contributed to this project</h5> -->
+    <h3>Davis Millard</h3>
     <h5>Student A contributed to this, this, and that.</h5>
-    <h3>Student B</h3>
+    <h3>Connor Burdick</h3>
     <h5>Student B contributed to this, this, and that.</h5>
-    <h3>Student C</h3>
+    <h3>Aaron Perrill</h3>
     <h5>Student C contributed to this, this, and that.</h5>
-    <h3>Student D</h3>
+    <h3>Mohammad Fasahat</h3>
     <h5>Student D contributed to this, this, and that.</h5>
   </div>
 
@@ -191,6 +199,7 @@
 
     var path_options = {
       radius: .0001 * obj.freq_pickup,
+           fillColor: d3.rgb('#FFFFE0').brighter(),
       color: d3.rgb('#FF8C00').brighter(),
       stroke: true,
       weight: 2,
@@ -211,8 +220,8 @@
 
     var path_options = {
       radius: .0001 * object.freq_dropoff,
-      fillColor: d3.rgb('#FFFFE0').brighter(),
-      color: d3.rgb('#FF8C00').brighter(),
+      fillColor: d3.rgb('#FF8C00').brighter(),
+      color: d3.rgb('#FFFFE0').brighter(),
       stroke: true,
       weight: 2,
     };
@@ -231,7 +240,7 @@
 var myWords = [{word: "N and W Cab Co", size: "4"}, {word: "Taxi Affiliation Service Yellow", size: "52"}, {word: "City Service", size: "50"}, {word: "SubUrban Dispatch LLC", size: "14"}, {word: "Choice Taxi Association", size: "10"}, {word: "Setare Inc", size: "8"}, {word: "Checker Taxi Affiliation", size: "14"}, {word: "Blue Diamond", size: "6"}, {word: "Sergey Cap Corb", size: "2"}, {word: "24 Seven Taxio", size: "2"}, {word: "Top Cab Affiliation", size: "2"}, {word: "Taxicab Insurance Agency, LLC", size: "4"}, {word: "Taxi Affiliation Services", size: "6"}, {word: "Nova Taxi Affiliation Llc", size: "2"}, {word: "Metro Taxi Jet A", size: "1"}, {word: "Leonard Cab Co", size: "12"}, {word: "Choice Taxi Association", size: "10"}, {word: "Chicago Taxi Cab", size: "8"}, {word: "Chicago Medallion Management", size: "2"}, {word: "Chicago Carriage Cab Corp", size: "4"}, {word: "Setare Inc", size: "8"}, {word: "Setare Inc", size: "8"}, {word: "Setare Inc", size: "8"} ]
 
 // set the dimensions and margins of the graph
-var margin = {top: 10, right: 500, bottom: 10, left: 100},
+var margin = {top: 10, right: 500, bottom: 10, left: 50},
     width = 1400 - margin.left - margin.right,
     height = 350 - margin.top - margin.bottom;
 
