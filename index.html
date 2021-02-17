@@ -60,13 +60,21 @@
     </div>
   </div>
 
+  <div class="container one-bottom" >
 
+    <div class="row">
+      <img class="twelve columns scale-with-grid quarter-bottom-rel" src="img/Diagrams-Images/Ride-Share-Header.jpg">
+      
+      
+    </div>
+  </div>
+  
   <div class="container one-bottom" style="margin-top: 10px">
     <div class="twelve columns">
         
          
      
-      <h2>Chigaco Taxis Trips <i class="fas fa-1x fa-taxi"></i></h2> 
+      <h2>Where To Taxi? <i class="fas fa-1x fa-taxi"></i><br> Data Driven Visual Analysis Of Taxi Profitability </h2> 
       
       <h4>Narrative</h4>
       <p>
@@ -85,35 +93,34 @@
     </div>
   </div>
 
+<!-- Map 1 -->
   <div class="container one-bottom" >
     <div class="twelve columns">
-      <h3>Example 1: Simple Map <i class="fas fa-map-marker-alt"></i> </h3>
-      <h5>
-        This example shows how to create a map using Leaflet.js and MapBox.js, and center the map at a specified pair of lat/long coordinates.
-      </h5>
+      <h3>Chicago Map <i class="fas fa-map-marker-alt"></i> </h3>
+
     </div>
   </div>
 
   <div id="map_1" class="one-bottom"></div>
 
-
+<!-- Map 2 -->
   <div class="container one-bottom" >
     <div class="twelve columns">
-      <h3>Example 2: Map with displayed locations of stations from a dataset <i class="fas fa-map-marker-alt"></i></h3>
+      <h3>Taxi fleet pick up Locations <i class="fas fa-map-marker-alt"></i></h3>
       <h5>
-        This example shows how to create a map using Leaflet.js/MapBox.js, and then plot a set of circles at the locations of the stations.
+     Below, this map depicts the Chicago taxi pick up locations located across the city. The larger the radii of the circle equates to a higher density of people being picked up at that location.
       </h5>
     </div>
   </div>
 
   <div id="map_2" class="one-bottom"></div>
 
-
+<!-- Map 3 -->
   <div class="container one-bottom" >
     <div class="twelve columns">
-      <h3>Example 3: Map with locations of stations with sizes proportional to their accumulation levels <i class="fas fa-map-marker-alt"></i></h3>
+      <h3>Taxi fleet drop off Locations <i class="fas fa-map-marker-alt"></i></h3>
       <h5>
-        This example shows how to create a map using Leaflet.js/MapBox.js, plot a set of circles at the locations of the stations, and adjusts their diameters to be proportional to the inventory levels of the stations.
+        This map below shows the drop off locations within downtown Chicago for taxi services. The increasing size of the circles denotes the density of passengers being dropped off in these locations. 
       </h5>
     </div>
   </div>
@@ -135,41 +142,38 @@
 <div id="my_dataviz"></div>
 
 <div class="container one-bottom">
-    <h3>Below is an array of images organized into rows and collumns</h3>
+    <h3>Diagrams:</h3>
 </div>
 
-  <div class="container one-bottom" >
+  <div class="container2 one-bottom" >
     <div class="row">
       <img class="four columns scale-with-grid quarter-bottom-rel" src="img/Diagrams-Images/A.png">
       <img class="four columns scale-with-grid quarter-bottom-rel" src="img/Diagrams-Images/B.png">
       <img class="four columns scale-with-grid quarter-bottom-rel" src="img/Diagrams-Images/C.png">
+      
     </div>
-    <div class="row">
-      <img class="four columns scale-with-grid quarter-bottom-rel" src="img/Diagrams-Images/ChicagoTaxi.jpg">
-      <img class="four columns scale-with-grid quarter-bottom-rel" src="img/Diagrams-Images/RideShare.jpg">
-      <img class="four columns scale-with-grid quarter-bottom-rel" src="img/Diagrams-Images/TripMap.jpg">
-    </div>
+
   </div>
 
-  <div class="container one-bottom" >
-    <h2>This is Heading 2</h2>
-    <h3>This is Heading 3</h3>
-    <h4>This is Heading 4</h4>
-    <h5>This is Heading 5</h5>
-    <p>This is paragraph text p</p>
-  </div>
+ <div class="container one-bottom">
+   <p>
+       In addition to taxi services having to compete amongst themselves in one of the largest cities in America, taxi services as a whole in Chicago have seen an overall decrease in business while the ride sharing platform has increased exponentially in the city. A study published by the City of Chicago in 2019 mentions that between 2015 and 2018 the annual number of ride hailing trips in Chicago increased by 271% and the miles traveled also increased by 344%. The study also shows that over half of all trips begin and end in downtown Chicago, with one third of those trips beginning and ending in downtown entirely. The city classifies any vehicle that provides at least four trips a month to be considered as an “active registered vehicle” ; these numbered only 15,078 in 2015 but have risen to 68,892 as of 2017 only two years later.
+       <br><br>
+       This has resulted in increased traffic congestion, costing the city millions in tax dollars for road repair, ever increasing trip fees, and needless Co2 production as waste from vehicle idling while on congested streets. The city limits taxi medallion licenses to ensure adequate coverage of the city and to stimulate healthy competition between taxi services, however there are no such restrictions on ride sharing platforms such as Uber and Lyft. These services while growing in popularity have also increased the number of wasted trips and single “private” passenger uses, while forcing taxi drivers to work long hours, keeping their cars on the road longer to maintain their standard income. The increased congestion only exacerbates the problem as taxi drivers depend on speed and a constant user base to remain profitable.
+   </p>
+</div>
 
   <div class="container one-bottom" >
     <h2>Team & Contributions</h2>
     <!-- <h5>Be very clear about how each student in your team contributed to this project</h5> -->
     <h3>Davis Millard</h3>
-    <h5>Student A contributed to this, this, and that.</h5>
+    <p>Researched supporting narrative information, edited taxi business profitability graph, and found relevant chicago taxi images for webpage aesthetic. Wrote web page map text. </p>
     <h3>Connor Burdick</h3>
-    <h5>Student B contributed to this, this, and that.</h5>
+    <p>Cleaned the data from our data source using Python. Some examples of cleaning were to rename columns as they were multiple words, remove empty rows because not all entries had pickup or dropoff latitude and longitude recorded, and ignored all fares and tolls that were more than 1000 dollars to calculate total revenue for each taxi company. Calculated the frequency of pickup and dropoff locations to show what were the most popular locations. Edited the sample code provided to showcase the data on a map.</p>
     <h3>Aaron Perrill</h3>
-    <h5>Student C contributed to this, this, and that.</h5>
+    <p>Helped establish narrative. Wrote text to display on our webpage. Created three representational diagrams showing taxi hotspots, taxi profitability per trip, and suggested taxi dispatch locations.</p>
     <h3>Mohammad Fasahat</h3>
-    <h5>Student D contributed to this, this, and that.</h5>
+    <p>Created a GitHub page and uploaded the HTML file there. Made a word graph for taxi business profitability. Edited the sample HTML and CSS files and imported the documnets. Adjusted the Mapbox styles and markers on them.</p>
   </div>
 
 
